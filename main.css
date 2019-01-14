@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+#coding { 
+  background-image: url("img/apple-coder-coding-7114.jpg");
+ 
+}
+
+#surfing {
+  background-image: url("img/adventure-bali-beach-695779.jpg");
+}
+
+#music {
+  background-image: url("img/audience-band-blur-736355.jpg");
+}
+#trip {
+  background-image: url("img/bokeh-bus-camper-54278.jpg");
+}
+#billard {
+  background-image: url("img/adult-balls-billiards-1251181.jpg");
+}
+
+.pannel {
+  background: #6B0F9C;
+  box-shadow: 2px 2px 2px 5px rgba(255,255,255,0.1);
+  align-items: center;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+  transition:
+        font-size 1s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+.pannel > *:last-child { 
+  transform: translateY(110%); 
+}
+
+.pannel.active > *:last-child { 
+  transform: translateY(0);
+ }
+
+.Writing {
+  font-size: 24px;
+  text-align: center;
+  width: 90%;
+  color: white;
+  font-weight: 700;
+  transition: transform 1s;
+}
+
+.pannel p {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  font-size: 80px;
+  flex: 5;
+}
